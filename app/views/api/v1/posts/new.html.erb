@@ -1,0 +1,9 @@
+<%= form_for @post, url: {action: "create"} do |f| %>
+	<%= f.label "title" %>
+	<%= f.text_field :title %></br>
+	<%= f.label "location" %>
+	<%= f.text_field :location %></br>
+	<%= f.label "Image" %>
+	<%= f.file_field :image %></br>
+	<%= f.submit "Create" %>
+<% end %>
